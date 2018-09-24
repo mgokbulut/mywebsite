@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sim_eq</title>
+	<!-- <script src="script.js"></script> -->
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	<script src="AlgebraticQuestion_solveWithSteps.js" type="text/javascript"></script>
+	<!-- <script src="deneme.js"></script> -->
+</head>
+<body>
+
+	<form>
+
+		<div id="questionText1">
+			<math display="block"><mrow></mrow></math>
+		</div>
+
+		<div id="questionText2">
+			<math display="block" >
+				<mrow class="beginning">
+				</mrow>
+			</math>
+		</div>
+		<br>
+		<input type="button" onclick="main23()" value="generate questions and answer" size="50px">
+		<br>
+		<p>stepleri gormek iccin assagi in :)</p>
+		<style>
+		table {
+		    border-collapse: collapse;
+		    width: 100%;
+		}
+
+		td, th {
+				font-family: "Courier New", Courier, monospace;
+				border: 1px solid #dddddd;
+				border-bottom: 3px solid rgb(204, 245, 255);;
+				border-right: solid 1px solid red;
+				border-left: solid 1px solid red;
+				text-align: left;
+				padding: 8px;
+		}
+		</style>
+
+		<div id="answerSteps">
+				<table id="myTable">
+				  <tr><th>1</th><th id="th1"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>2</th><th id="th2"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>3</th><th id="th3"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>4</th><th id="th4"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>5</th><th id="th5"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>6</th><th id="th6"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>7</th><th id="th7"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>8</th><th id="th8"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>9</th><th id="th9"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>10</th><th id="th10"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>11</th><th id="th11"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>12</th><th id="th12"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>13</th><th id="th13"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>14</th><th id="th14"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>15</th><th id="th15"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>16</th><th id="th16"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>17</th><th id="th17"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>18</th><th id="th18"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>19</th><th id="th19"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>20</th><th id="th20"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>21</th><th id="th21"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>22</th><th id="tH22"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>23</th><th id="th23"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>24</th><th id="th24"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>25</th><th id="th25"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>26</th><th id="th26"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>27</th><th id="th27"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>28</th><th id="th28"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>29</th><th id="th29"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>30</th><th id="th3O"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>31</th><th id="th31"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>32</th><th id="th32"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>33</th><th id="th33"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>34</th><th id="th34"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>35</th><th id="th35"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>36</th><th id="th36"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>37</th><th id="th37"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>38</th><th id="th38"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>39</th><th id="th39"></th><math display="block"><mrow></mrow></math></tr>
+					<tr><th>40</th><th id="th40"></th><math display="block"><mrow></mrow></math></tr>
+			</table>
+		</div>
+	</form>
+
+<!--
+	<br><br><br>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+                <msup>
+                    <mfenced>
+                        <mrow>
+                            <mi>a</mi>
+                            <mo>+</mo>
+                            <mi>b</mi>
+                        </mrow>
+                    </mfenced>
+                    <mn>2</mn>
+                </msup>
+                <mo>=</mo>
+                <msup>
+                    <mrow>
+                        <mi>a</mi>
+                    </mrow>
+                    <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <msup>
+                    <mrow>
+                        <mi>b</mi>
+                    </mrow>
+                    <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <mrow>
+                    <mn>2</mn>
+                    <mi>a</mi>
+                    <mi>b</mi>
+                </mrow>
+            </mrow>
+        </math>
+	<br><br><br>
+	<math xmlns="http://www.w3.org/1998/Math/MathML">
+		<mrow>
+		  <mi>x</mi> <mo>=</mo>
+		  <mrow>
+		  <mfrac>
+		    <mrow>
+		      <mrow><mo>-</mo><mi>b</mi></mrow>
+		      <mo>&PlusMinus;</mo>
+		      <msqrt>
+		        <mrow>
+		          <msup><mi>b</mi><mn>2</mn></msup>
+		          <mo>-</mo>
+		          <mrow>
+		            <mn>4</mn><mo>&InvisibleTimes;</mo>
+		            <mi>a</mi><mo>&InvisibleTimes;</mo>
+		            <mi>c</mi>
+		          </mrow>
+		        </mrow>
+		      </msqrt>
+		    </mrow>
+		    <mfrac>
+			    <mrow>
+			      <mn>2</mn><mo>&InvisibleTimes;</mo>
+			      <mi>a</mi>
+			    </mrow>
+			     <mrow>
+			      <mn>5</mn><mo>&InvisibleTimes;</mo>
+			      <mi>a</mi>
+			    </mrow>
+			</mfrac>
+		  </mfrac>
+		</mrow>
+		</mrow>
+	</math>
+
+-->
+</body>
+</html>
+
+<!-- yeni line eklemek icin cevaba append kullan jquery-->
